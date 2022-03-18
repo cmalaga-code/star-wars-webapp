@@ -1,0 +1,13 @@
+.header-component-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#header-component-h1{
+    order: 1;
+    align-self: center;
+}

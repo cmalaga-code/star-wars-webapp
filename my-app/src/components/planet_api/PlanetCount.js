@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import 'tachyons';
+
 
 class PlanetCount extends Component{
     constructor(props){
@@ -11,8 +13,7 @@ class PlanetCount extends Component{
           const response = await fetch(url);
           const data = await response.json();
           this.setState({planetCount: data.count});
-        }
-        catch{
+        }catch{
           console.log("error in planet count component api call!")
         }
     }
@@ -21,6 +22,7 @@ class PlanetCount extends Component{
             <div className="black baskerville tc grow bg-yellow br3 pa3 ma2 dib bw2 shadow-5">
                 <h4>Planet Count</h4>
                 <p>{this.state.planetCount}</p>
+                <hr></hr>
             </div>
         );
     }

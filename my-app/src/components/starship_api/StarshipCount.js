@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import 'tachyons';
 
 
 class StarshipCount extends Component{
@@ -17,6 +18,7 @@ class StarshipCount extends Component{
             <div className="black baskerville tc grow bg-yellow br3 pa3 ma2 dib bw2 shadow-5">
                 <h4>Starship Count</h4>
                 <p>{this.state.starshipCount}</p>
+                <hr></hr>
             </div>
         );
     }
